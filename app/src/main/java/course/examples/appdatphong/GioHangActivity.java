@@ -207,6 +207,7 @@ public class GioHangActivity extends AppCompatActivity {
                 hashMap.put("tenkhachhang", TaiKhoanActivity.tvHoTen.getText().toString());
                 hashMap.put("sodienthoai", TaiKhoanActivity.tvSdt.getText().toString());
                 hashMap.put("email", TaiKhoanActivity.tvEmail.getText().toString());
+                hashMap.put("idtaikhoan", Integer.toString(MainActivity.idtaikhoan));
                 return hashMap;
             }
         };

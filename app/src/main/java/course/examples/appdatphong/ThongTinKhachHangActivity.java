@@ -146,6 +146,7 @@ public class ThongTinKhachHangActivity extends AppCompatActivity {
                             hashMap.put("tenkhachhang",ten);
                             hashMap.put("sodienthoai",sdt);
                             hashMap.put("email",email);
+                            hashMap.put("idtaikhoan", Integer.toString(MainActivity.idtaikhoan));
                             return hashMap;
                         }
                     };
