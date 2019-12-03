@@ -14,4 +14,7 @@ public class server {
     public static String duongdan_updatematkhau = "http://" + localhost + "/server/updateMatKhau.php";
     public static String duongdan_updatethongtin = "http://" + localhost + "/server/updateThongTinTK.php";
     public static String duongdan_khachsandadat = "http://" + localhost + "/server/getkhachsandadat.php";
+    public static String urlGetData1 = "http://" + localhost + "/server/getdanhgia.php";
+    public static String urlGetData = "http://" + localhost + "/server/getdanhgiamoilam.php";
+
 }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\VinhNghi\\Desktop\\AppHotelBooking\\HotelBookingApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "C:\\Users\\pc\\Documents\\GitHub\\HotelBookingApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\VinhNghi\\.gradle\\caches\\transforms-2\\files-2.1\\b377ac01597f62f78a03a4b0aa1eae9c\\material-1.1.0-alpha10\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\pc\\.gradle\\caches\\transforms-2\\files-2.1\\b377ac01597f62f78a03a4b0aa1eae9c\\material-1.1.0-alpha10\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

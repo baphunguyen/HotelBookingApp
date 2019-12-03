@@ -34,6 +34,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="course.examples.appdatphong.Nhapchitietdanhgia" />
+        <activity android:name="course.examples.appdatphong.FullImage" />
+        <activity android:name="course.examples.appdatphong.DanhGia" />
         <activity android:name="course.examples.appdatphong.DichVuActiviry" />
         <activity android:name="course.examples.appdatphong.TaiKhoanActivity" />
         <activity android:name="course.examples.appdatphong.DangKyActivity" />

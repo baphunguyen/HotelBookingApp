@@ -20,7 +20,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".DichVuActiviry"></activity>
+        <activity android:name=".Nhapchitietdanhgia"></activity>
+        <activity android:name=".FullImage" />
+        <activity android:name=".DanhGia" />
+        <activity android:name=".DichVuActiviry" />
         <activity android:name=".TaiKhoanActivity" />
         <activity android:name=".DangKyActivity" />
         <activity android:name=".DangNhapActivity">

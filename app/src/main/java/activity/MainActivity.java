@@ -449,8 +449,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         LinearLayoutManager layoutManager1
                 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        LinearLayoutManager layoutManager2
-                = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager layoutManager2= new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerViewmanhinhchinnh.setLayoutManager(layoutManager1);
         recyclerViewmanhinhchinnh.setHasFixedSize(true);
         recyclerViewmanhinhchinnh.setAdapter(sanpham_adapter);

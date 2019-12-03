@@ -53,7 +53,7 @@ public class giohang_adapter extends BaseAdapter {
         this.context = context;
         this.arr_giohang = arr_giohang;
     }
-
+///tessttttt
     @Override
     public int getCount() {
         return arr_giohang.size();

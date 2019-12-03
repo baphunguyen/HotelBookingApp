@@ -1405,6 +1405,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable custom_button
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1438,6 +1439,7 @@ drawable icon_ok
 drawable icon_people_female
 drawable icon_people_male
 drawable iconcart
+drawable iconhotel
 drawable iconnewcorner
 drawable location
 drawable mtrl_dialog_background
@@ -1452,6 +1454,7 @@ drawable mtrl_tabs_default_indicator
 drawable name
 drawable navigation_empty_icon
 drawable noimage
+drawable noimage1
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1467,6 +1470,7 @@ drawable notify_panel_notification_icon_bg
 drawable password_icon
 drawable phone
 drawable placeholder
+drawable progress_bar_drawable
 drawable spinner
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -1557,6 +1561,8 @@ id bt_xacnhandichvu
 id bt_xacnhanngay
 id btminus_dem
 id btminus_phong
+id btnChoose
+id btnUpload
 id btn_chuyen_dang_ky
 id btn_dang_ky
 id btn_dang_nhap
@@ -1582,6 +1588,7 @@ id buttonPanel
 id button_thanhtoangiohang
 id button_tieptucchonkhachsan
 id buttonchonphong
+id buttonnhapdanhgia
 id cancel_action
 id cancel_button
 id cartview
@@ -1613,6 +1620,7 @@ id coordinator
 id custom
 id customPanel
 id cut
+id danhgia
 id dark
 id date_picker_actions
 id decor_content_parent
@@ -1622,6 +1630,8 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detaildg
+id detailuser
 id diachilayout
 id dialog_button
 id dimensions
@@ -1668,6 +1678,8 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id headerdg
+id headeruser
 id hideable
 id home
 id homeAsUp
@@ -1677,6 +1689,8 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageView
+id imageView2
 id image_avatar
 id image_giohang
 id imagesp
@@ -1685,6 +1699,7 @@ id imageview_loaisp
 id imageview_sokhach
 id imageviewchonphong
 id imageviewdanang
+id imageviewdanhgia
 id imageviewhanoi
 id imageviewhochiminh
 id imgplaceholder
@@ -1707,8 +1722,11 @@ id listviewchonphong
 id listviewdanang
 id listviewhanoi
 id listviewhochiminh
+id lvdg
 id map
 id mapkhachsan
+id markdg
+id markuser
 id masked
 id media_actions
 id menucart
@@ -1743,6 +1761,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id namedg
 id navigation_header_container
 id navigationview
 id never
@@ -1767,6 +1786,7 @@ id pin
 id progress_circular
 id progress_horizontal
 id progressbar
+id progressbar2
 id radio
 id recyclerview_khachsandadat
 id recyclerview_khachsanmoinhat
@@ -1834,6 +1854,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tenuser
 id terrain
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
@@ -1866,11 +1887,13 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id tongmark
 id toolbarManhinhchinh
 id toolbar_chitietkhachsan
 id toolbar_chonngay
 id toolbar_dang_ky
 id toolbar_dangnhap
+id toolbar_danhgia
 id toolbar_dichvu
 id toolbar_giohang
 id toolbar_taikhoan
@@ -1879,6 +1902,7 @@ id toolbardanang
 id toolbardhanoi
 id toolbardthongtinkhachhang
 id toolbarhochiminh
+id toolbarnhapdanhgia
 id toolbarthongtin
 id top
 id topPanel
@@ -1986,11 +2010,14 @@ layout activity_chi_tiet_sp
 layout activity_da_nang
 layout activity_dang_ky
 layout activity_dang_nhap
+layout activity_danh_gia
 layout activity_dich_vu_activiry
+layout activity_full_image
 layout activity_giohang
 layout activity_hanoi
 layout activity_hochiminh
 layout activity_main
+layout activity_nhapchitietdanhgia
 layout activity_phong
 layout activity_tai_khoan
 layout activity_thong_tin
@@ -2024,6 +2051,7 @@ layout dong_listview_loaisp
 layout dong_phong
 layout dong_sanpham_moinhat
 layout dong_spinnner
+layout dongdanhgia
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2869,6 +2897,7 @@ style Widget_MaterialComponents_Toolbar_Primary
 style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_Support_CoordinatorLayout
+style progressBarStyle
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DanhGia">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_danhgia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colortoolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Đánh giá"
+        app:titleTextColor="#FFFFFF" />
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="53dp">
+
+        <TextView
+
+            android:id="@+id/tongmark"
+            android:layout_width="221dp"
+            android:layout_height="70dp"
+            android:textColor="#E91E63"
+            android:textSize="45sp"></TextView>
+
+        <Button
+            android:id="@+id/buttonnhapdanhgia"
+            android:layout_width="168dp"
+            android:layout_height="70dp"
+
+
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="Thêm Đánh Giá"
+
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"></Button>
+
+    </LinearLayout>
+    <ProgressBar
+        style="@style/progressBarStyle"
+        android:id="@+id/progressbar2"
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:max="10"
+        android:progress="0"></ProgressBar>
+
+    <ListView
+        android:id="@+id/lvdg"
+        android:layout_width="413dp"
+        android:layout_height="611dp"
+        android:longClickable="true">
+
+
+    </ListView>
+
+</LinearLayout>
+
+
+
