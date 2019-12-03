@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\pc\\Documents\\GitHub\\HotelBookingApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
+            "outputFile": "D:\\Dai_Hoc\\Hoc_Ky_5\\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\\Do_an\\HotelBooking\\HotelBookingApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pc\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\nguye\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\pc\\.gradle\\caches\\transforms-2\\files-2.1\\b377ac01597f62f78a03a4b0aa1eae9c\\material-1.1.0-alpha10\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\nguye\\.gradle\\caches\\transforms-2\\files-2.1\\b377ac01597f62f78a03a4b0aa1eae9c\\material-1.1.0-alpha10\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

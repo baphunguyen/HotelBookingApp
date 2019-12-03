@@ -216,7 +216,8 @@ public class Nhapchitietdanhgia extends AppCompatActivity implements View.OnClic
             };
             requestQueue2.add(stringRequest);
             check_connection.ShowToast_Short(getApplicationContext(), "Thêm Đánh Gía thành công");
-            Intent intent = new Intent(Nhapchitietdanhgia.this, MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            intent.putExtra("idtaikhoan", MainActivity.idtaikhoan);
             startActivity(intent);
             finish();
         } else {

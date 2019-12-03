@@ -31,6 +31,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.DecimalFormat;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -49,6 +52,7 @@ public class GioHangActivity extends AppCompatActivity {
     Toolbar toolbargiohang;
     giohang_adapter giohang_adapter;
     public static final int REQUEST_CODE_EXAMPLE = 0x9345;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -227,6 +231,9 @@ public class GioHangActivity extends AppCompatActivity {
                         if (MainActivity.arr_giohang.size() <= 0) {
                             tvthongbao.setVisibility(View.VISIBLE);
                         } else {
+                            Date d_tra = formatter.parse(MainActivity.arr_giohang.get(position).getNgaytraphong(),new ParsePosition(0));
+                            Date d_nhan = formatter.parse(MainActivity.arr_giohang.get(position).getNgaynhanphong(),new ParsePosition(0));
+                            CalendarActivity.XoaNgay(d_nhan, d_tra);
                             MainActivity.arr_giohang.remove(position);
                             giohang_adapter.notifyDataSetChanged();
                             EvenUltil();

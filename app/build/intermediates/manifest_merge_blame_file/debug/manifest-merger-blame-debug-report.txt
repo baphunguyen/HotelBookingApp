@@ -6,98 +6,98 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml
+8-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml
+9-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml
 10    <!--
 11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
 12         Google Maps Android API v2, but you must specify either coarse or fine
 13         location permissions for the 'MyLocation' functionality.
 14    -->
 15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-15-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:9:5-79
-15-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:9:22-76
+15-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:9:5-79
+15-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:9:22-76
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:10:5-81
-16-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:10:22-78
+16-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:10:5-81
+16-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:10:22-78
 17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-17-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:11:5-81
-17-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:11:22-78
+17-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:11:5-81
+17-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:11:22-78
 18    <uses-permission android:name="android.permission.INTERNET" />
-18-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:12:5-67
-18-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:12:22-64
+18-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:12:5-67
+18-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:12:22-64
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:13:5-79
-19-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:13:22-76
+19-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:13:5-79
+19-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:13:22-76
 20
 21    <uses-feature
-21-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\e62c0a19515f9252a94baa4861689588\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
+21-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\0dbc2de7d322500f56214be4e8333f1d\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
 22        android:glEsVersion="0x00020000"
-22-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\e62c0a19515f9252a94baa4861689588\jetified-play-services-maps-16.1.0\AndroidManifest.xml:27:9-41
+22-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\0dbc2de7d322500f56214be4e8333f1d\jetified-play-services-maps-16.1.0\AndroidManifest.xml:27:9-41
 23        android:required="true" />
-23-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\e62c0a19515f9252a94baa4861689588\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
+23-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\0dbc2de7d322500f56214be4e8333f1d\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
 24
 25    <application
-25-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:15:5-60:19
+25-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:15:5-60:19
 26        android:allowBackup="true"
-26-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:16:9-35
+26-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:16:9-35
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.1.0] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
+27-->[androidx.core:core:1.1.0] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
 28        android:debuggable="true"
 29        android:icon="@mipmap/ic_launcher"
-29-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:17:9-43
+29-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:17:9-43
 30        android:label="@string/app_name"
-30-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:18:9-41
+30-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:18:9-41
 31        android:roundIcon="@mipmap/ic_launcher_round"
-31-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:19:9-54
+31-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:19:9-54
 32        android:supportsRtl="true"
-32-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:20:9-35
+32-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:20:9-35
 33        android:testOnly="true"
 34        android:theme="@style/AppTheme"
-34-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:21:9-40
+34-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:21:9-40
 35        android:usesCleartextTraffic="true" >
-35-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:22:9-44
+35-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:22:9-44
 36        <activity android:name="course.examples.appdatphong.Nhapchitietdanhgia" />
-36-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:23:9-65
-36-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:23:19-53
+36-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:23:9-65
+36-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:23:19-53
 37        <activity android:name="course.examples.appdatphong.FullImage" />
-37-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:24:9-47
-37-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:24:19-44
+37-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:24:9-47
+37-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:24:19-44
 38        <activity android:name="course.examples.appdatphong.DanhGia" />
-38-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:25:9-45
-38-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:25:19-42
+38-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:25:9-45
+38-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:25:19-42
 39        <activity android:name="course.examples.appdatphong.DichVuActiviry" />
-39-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:26:9-52
-39-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:26:19-49
+39-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:26:9-52
+39-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:26:19-49
 40        <activity android:name="course.examples.appdatphong.TaiKhoanActivity" />
-40-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:27:9-54
-40-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:27:19-51
+40-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:27:9-54
+40-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:27:19-51
 41        <activity android:name="course.examples.appdatphong.DangKyActivity" />
-41-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:28:9-52
-41-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:28:19-49
+41-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:28:9-52
+41-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:28:19-49
 42        <activity android:name="course.examples.appdatphong.DangNhapActivity" >
-42-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:29:9-35:20
-42-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:29:19-51
+42-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:29:9-35:20
+42-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:29:19-51
 43            <intent-filter>
-43-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:30:13-34:29
+43-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:30:13-34:29
 44                <action android:name="android.intent.action.MAIN" />
-44-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:31:17-69
-44-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:31:25-66
+44-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:31:17-69
+44-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:31:25-66
 45
 46                <category android:name="android.intent.category.LAUNCHER" />
-46-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:33:17-77
-46-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:33:27-74
+46-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:33:17-77
+46-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:33:27-74
 47            </intent-filter>
 48        </activity>
 49        <activity android:name="course.examples.appdatphong.CalendarActivity" />
-49-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:36:9-54
-49-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:36:19-51
+49-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:36:9-54
+49-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:36:19-51
 50        <activity android:name="course.examples.appdatphong.PhongActivity" />
-50-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:37:9-51
-50-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:37:19-48
+50-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:37:9-51
+50-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:37:19-48
 51        <activity android:name="course.examples.appdatphong.DaNangActivity" />
-51-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:38:9-52
-51-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:38:19-49
+51-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:38:9-52
+51-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:38:19-49
 52        <!--
 53             The API key for Google Maps-based APIs is defined as a string resource.
 54             (See the file "res/values/google_maps_api.xml").
@@ -107,59 +107,59 @@
 58             You can define the keys for the debug and release targets in src/debug/ and src/release/.
 59        -->
 60        <meta-data
-60-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:47:9-49:55
+60-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:47:9-49:55
 61            android:name="com.google.android.geo.API_KEY"
-61-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:48:13-58
+61-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:48:13-58
 62            android:value="@string/google_maps_key" />
-62-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:49:13-52
+62-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:49:13-52
 63
 64        <activity
-64-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:51:9-53:64
+64-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:51:9-53:64
 65            android:name="course.examples.appdatphong.ThongTinActivity"
-65-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:52:13-45
+65-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:52:13-45
 66            android:label="@string/title_activity_thong_tin" />
-66-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:53:13-61
+66-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:53:13-61
 67        <activity android:name="course.examples.appdatphong.ThongTinKhachHangActivity" />
-67-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:54:9-63
-67-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:54:19-60
+67-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:54:9-63
+67-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:54:19-60
 68        <activity android:name="course.examples.appdatphong.GioHangActivity" />
-68-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:55:9-53
-68-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:55:19-50
+68-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:55:9-53
+68-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:55:19-50
 69        <activity android:name="course.examples.appdatphong.ChiTietKhachSanActivity" />
-69-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:56:9-61
-69-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:56:19-58
+69-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:56:9-61
+69-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:56:19-58
 70        <activity android:name="course.examples.appdatphong.HaNoiActivity" />
-70-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:57:9-51
-70-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:57:19-48
+70-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:57:9-51
+70-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:57:19-48
 71        <activity android:name="course.examples.appdatphong.HoChiMinhActivity" />
-71-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:58:9-55
-71-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:58:19-52
+71-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:58:9-55
+71-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:58:19-52
 72        <activity android:name="activity.MainActivity" />
-72-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:59:9-58
-72-->C:\Users\pc\Documents\GitHub\HotelBookingApp\app\src\main\AndroidManifest.xml:59:19-55
+72-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:59:9-58
+72-->D:\Dai_Hoc\Hoc_Ky_5\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\Do_an\HotelBooking\HotelBookingApp\app\src\main\AndroidManifest.xml:59:19-55
 73        <!-- Needs to be explicitly declared on P+ -->
 74        <uses-library
-74-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\e62c0a19515f9252a94baa4861689588\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+74-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\0dbc2de7d322500f56214be4e8333f1d\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
 75            android:name="org.apache.http.legacy"
-75-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\e62c0a19515f9252a94baa4861689588\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+75-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\0dbc2de7d322500f56214be4e8333f1d\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
 76            android:required="false" />
-76-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\e62c0a19515f9252a94baa4861689588\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+76-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\0dbc2de7d322500f56214be4e8333f1d\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
 77
 78        <activity
-78-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\c5bec1d43839beb69e94caf18eedf9a8\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+78-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\07e1dd54d74de8b39d1da521e2ac1d9a\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
 79            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-79-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\c5bec1d43839beb69e94caf18eedf9a8\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+79-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\07e1dd54d74de8b39d1da521e2ac1d9a\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
 80            android:exported="false"
-80-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\c5bec1d43839beb69e94caf18eedf9a8\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+80-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\07e1dd54d74de8b39d1da521e2ac1d9a\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
 81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-81-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\c5bec1d43839beb69e94caf18eedf9a8\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+81-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\07e1dd54d74de8b39d1da521e2ac1d9a\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
 82
 83        <meta-data
-83-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\23f84532785a911fa79389039819760c\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+83-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\233b0fdd2d1e15f5819894e65fddbb5e\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
 84            android:name="com.google.android.gms.version"
-84-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\23f84532785a911fa79389039819760c\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+84-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\233b0fdd2d1e15f5819894e65fddbb5e\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
 85            android:value="@integer/google_play_services_version" />
-85-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\pc\.gradle\caches\transforms-2\files-2.1\23f84532785a911fa79389039819760c\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+85-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\nguye\.gradle\caches\transforms-2\files-2.1\233b0fdd2d1e15f5819894e65fddbb5e\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
 86    </application>
 87
 88</manifest>

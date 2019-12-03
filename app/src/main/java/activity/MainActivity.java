@@ -25,11 +25,13 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.appcompat.widget.Toolbar;
 
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
@@ -49,6 +51,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -88,11 +91,16 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     ArrayList<sanpham> arr_khachsandadat;
     khachsandadat_adapter khachsandadat_adapter;
 
+    loaispadapter diadiemadapter;
+    ArrayList<loaisp> arr_diadiem;
+    TextView textView_diadiem;
+    public static long[] date;
+
     public static ArrayList<giohang> arr_giohang;
     int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION;
 
     public static int idtaikhoan = 0;
-    public static user_info arr_userinfo;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             getIdTaiKhoan();
             ActionBar();
             ActionViewFlipper();
-            GetDuLieuLoaiSP();
+            GetDuLieuDiaDiem();
             GetDuLieuSanPhamMoiNhat();
             GetDuLieuKhachSanDaDat();
             CatchOnItemListView();
@@ -224,35 +232,56 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                         break;
                     case 1:
                         if (check_connection.haveNetworkConnection(getApplicationContext())) {
-                            Intent intent = new Intent(MainActivity.this, HoChiMinhActivity.class);
-                            intent.putExtra("idloaisp", arr_loaisp.get(i).getId());
-                            startActivity(intent);
+                            AlertDialog.Builder builderSingle = new AlertDialog.Builder(MainActivity.this);
+                            builderSingle.setIcon(R.drawable.iconhotel);
+                            builderSingle.setTitle("Chọn địa điểm của khách sạn");
+
+                            builderSingle.setAdapter(diadiemadapter, new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    switch (which)
+                                    {
+                                        case 0:
+                                            if (check_connection.haveNetworkConnection(getApplicationContext())) {
+                                                Intent intent = new Intent(MainActivity.this, HoChiMinhActivity.class);
+                                                intent.putExtra("idloaisp", 1);
+                                                startActivity(intent);
+                                            } else {
+                                                check_connection.ShowToast_Short(getApplicationContext(), "Bạn hãy kiểm tra lại kết nối");
+                                            }
+                                            drawerLayout.closeDrawer(GravityCompat.START);
+                                            break;
+                                        case 1:
+                                            if (check_connection.haveNetworkConnection(getApplicationContext())) {
+                                                Intent intent = new Intent(MainActivity.this, HaNoiActivity.class);
+                                                intent.putExtra("idloaisp", 2);
+                                                startActivity(intent);
+                                            } else {
+                                                check_connection.ShowToast_Short(getApplicationContext(), "Bạn hãy kiểm tra lại kết nối");
+                                            }
+                                            drawerLayout.closeDrawer(GravityCompat.START);
+                                            break;
+                                        case 2:
+                                            if (check_connection.haveNetworkConnection(getApplicationContext())) {
+                                                Intent intent = new Intent(MainActivity.this, DaNangActivity.class);
+                                                intent.putExtra("idloaisp", 3);
+                                                startActivity(intent);
+                                            } else {
+                                                check_connection.ShowToast_Short(getApplicationContext(), "Bạn hãy kiểm tra lại kết nối");
+                                            }
+                                            drawerLayout.closeDrawer(GravityCompat.START);
+                                            break;
+                                    }
+                                }
+
+                            });
+                            builderSingle.show();
+
                         } else {
                             check_connection.ShowToast_Short(getApplicationContext(), "Bạn hãy kiểm tra lại kết nối");
                         }
-                        drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case 2:
-                        if (check_connection.haveNetworkConnection(getApplicationContext())) {
-                            Intent intent = new Intent(MainActivity.this, HaNoiActivity.class);
-                            intent.putExtra("idloaisp", arr_loaisp.get(i).getId());
-                            startActivity(intent);
-                        } else {
-                            check_connection.ShowToast_Short(getApplicationContext(), "Bạn hãy kiểm tra lại kết nối");
-                        }
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-                    case 3:
-                        if (check_connection.haveNetworkConnection(getApplicationContext())) {
-                            Intent intent = new Intent(MainActivity.this, DaNangActivity.class);
-                            intent.putExtra("idloaisp", arr_loaisp.get(i).getId());
-                            startActivity(intent);
-                        } else {
-                            check_connection.ShowToast_Short(getApplicationContext(), "Bạn hãy kiểm tra lại kết nối");
-                        }
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-                    case 4:
                         if (check_connection.haveNetworkConnection(getApplicationContext())) {
                             Intent intent = new Intent(MainActivity.this, TaiKhoanActivity.class);
                             intent.putExtra("idtaikhoan", idtaikhoan);
@@ -262,7 +291,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                         }
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
-                    case 5:
+                    case 3:
                         if (check_connection.haveNetworkConnection(getApplicationContext())) {
                             Intent intent = new Intent(MainActivity.this, ThongTinActivity.class);
                             startActivity(intent);
@@ -271,6 +300,60 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                         }
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
+                }
+            }
+        });
+        textView_diadiem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (check_connection.haveNetworkConnection(getApplicationContext())) {
+                    AlertDialog.Builder builderSingle = new AlertDialog.Builder(MainActivity.this);
+                    builderSingle.setIcon(R.drawable.iconhotel);
+                    builderSingle.setTitle("Chọn địa điểm của khách sạn");
+
+                    builderSingle.setAdapter(diadiemadapter, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            switch (which)
+                            {
+                                case 0:
+                                    if (check_connection.haveNetworkConnection(getApplicationContext())) {
+                                        Intent intent = new Intent(MainActivity.this, HoChiMinhActivity.class);
+                                        intent.putExtra("idloaisp", 1);
+                                        startActivity(intent);
+                                    } else {
+                                        check_connection.ShowToast_Short(getApplicationContext(), "Bạn hãy kiểm tra lại kết nối");
+                                    }
+                                    drawerLayout.closeDrawer(GravityCompat.START);
+                                    break;
+                                case 1:
+                                    if (check_connection.haveNetworkConnection(getApplicationContext())) {
+                                        Intent intent = new Intent(MainActivity.this, HaNoiActivity.class);
+                                        intent.putExtra("idloaisp", 2);
+                                        startActivity(intent);
+                                    } else {
+                                        check_connection.ShowToast_Short(getApplicationContext(), "Bạn hãy kiểm tra lại kết nối");
+                                    }
+                                    drawerLayout.closeDrawer(GravityCompat.START);
+                                    break;
+                                case 2:
+                                    if (check_connection.haveNetworkConnection(getApplicationContext())) {
+                                        Intent intent = new Intent(MainActivity.this, DaNangActivity.class);
+                                        intent.putExtra("idloaisp", 3);
+                                        startActivity(intent);
+                                    } else {
+                                        check_connection.ShowToast_Short(getApplicationContext(), "Bạn hãy kiểm tra lại kết nối");
+                                    }
+                                    drawerLayout.closeDrawer(GravityCompat.START);
+                                    break;
+                            }
+                        }
+
+                    });
+                    builderSingle.show();
+
+                } else {
+                    check_connection.ShowToast_Short(getApplicationContext(), "Bạn hãy kiểm tra lại kết nối");
                 }
             }
         });
@@ -364,7 +447,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         requestQueue.add(stringRequest);
     }
 
-    private void GetDuLieuLoaiSP() {
+    private void GetDuLieuDiaDiem() {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(server.duongdan_loaisp, new Response.Listener<JSONArray>() {
             @Override
@@ -376,14 +459,12 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                             id = jsonObject.getInt("id");
                             tenloaisp = jsonObject.getString("tenloaisp");
                             hinhanhloaisp = jsonObject.getString("hinhanhloaisp");
-                            arr_loaisp.add(new loaisp(id, tenloaisp, hinhanhloaisp));
-                            loaispadapter.notifyDataSetChanged();
+                            arr_diadiem.add(new loaisp(id, tenloaisp, hinhanhloaisp));
+                            diadiemadapter.notifyDataSetChanged();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
                     }
-                    arr_loaisp.add(4, new loaisp(0, "Tài khoản", "https://cdn1.iconfinder.com/data/icons/technology-devices-2/100/Profile-512.png"));
-                    arr_loaisp.add(5, new loaisp(0, "Thông tin", "http://icons.iconarchive.com/icons/graphicloads/100-flat/256/information-icon.png"));
                 }
             }
         }, new Response.ErrorListener() {
@@ -438,7 +519,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         arr_loaisp = new ArrayList<>();
         arr_loaisp.add(0, new loaisp(0, "Trang chính", "http://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png"));
-
+        arr_loaisp.add(1, new loaisp(0, "Địa điểm", "https://cdn0.iconfinder.com/data/icons/hotel-icons-rounded/110/Hotel-2-512.png"));
+        arr_loaisp.add(2, new loaisp(0, "Tài khoản", "https://cdn1.iconfinder.com/data/icons/technology-devices-2/100/Profile-512.png"));
+        arr_loaisp.add(3, new loaisp(0, "Thông tin", "http://icons.iconarchive.com/icons/graphicloads/100-flat/256/information-icon.png"));
         loaispadapter = new loaispadapter(arr_loaisp, getApplicationContext());
         listViewmanhinhchinh.setAdapter(loaispadapter);
 
@@ -449,7 +532,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         LinearLayoutManager layoutManager1
                 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        LinearLayoutManager layoutManager2= new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager layoutManager2
+                = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerViewmanhinhchinnh.setLayoutManager(layoutManager1);
         recyclerViewmanhinhchinnh.setHasFixedSize(true);
         recyclerViewmanhinhchinnh.setAdapter(sanpham_adapter);
@@ -457,6 +541,11 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         recyclerViewkhachsandadat.setHasFixedSize(true);
         recyclerViewkhachsandadat.setAdapter(khachsandadat_adapter);
 
+        arr_diadiem = new ArrayList<>();
+        diadiemadapter = new loaispadapter(arr_diadiem,getApplicationContext());
+        textView_diadiem = (TextView) findViewById(R.id.textview_diadiem);
+        date = new long[60];
+        Arrays.fill(date, 0);
 
         if (arr_giohang != null) {
 

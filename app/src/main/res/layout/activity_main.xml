@@ -10,61 +10,86 @@
         android:id="@+id/drawerlayout"
         android:layout_height="match_parent"
         android:layout_width="match_parent">
-            <LinearLayout
-                android:orientation="vertical"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:id="@+id/toolbarManhinhchinh"
+                app:title="Trang Chính"
+                android:background="@color/colortoolbar"
+                app:titleTextColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            </androidx.appcompat.widget.Toolbar>
+            <ScrollView
+                android:background="#EBE7E7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-                <androidx.appcompat.widget.Toolbar
-                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                    android:id="@+id/toolbarManhinhchinh"
-                    app:title="Trang Chính"
-                    android:background="@color/colortoolbar"
-                    app:titleTextColor="#FFFFFF"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize">
-                </androidx.appcompat.widget.Toolbar>
-                <ViewFlipper
-                    android:id="@+id/viewflipper"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp">
-                </ViewFlipper>
                 <LinearLayout
-                    android:background="#DFDBDB"
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-                    <TextView
-                        android:textColor="#0048FF"
-                        android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:text="Khách sạn mới nhất"
-                        android:layout_margin="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:layout_margin="5dp"
-                        android:id="@+id/recyclerview_khachsanmoinhat"
+                    <ViewFlipper
+                        android:background="#FFFFFF"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/viewflipper"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                    </androidx.recyclerview.widget.RecyclerView>
-                    <TextView
-                        android:textColor="#0048FF"
-                        android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:text="Khách sạn đã đặt"
-                        android:layout_margin="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:layout_margin="5dp"
-                        android:id="@+id/recyclerview_khachsandadat"
+                        android:layout_height="150dp">
+                    </ViewFlipper>
+                    <LinearLayout
+                        android:background="#EBE7E7"
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                    </androidx.recyclerview.widget.RecyclerView>
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textview_diadiem"
+                            android:textColor="#0048FF"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:text="Khách sạn theo địa điểm"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:text="Khách sạn mới nhất"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_margin="5dp"
+                            android:id="@+id/recyclerview_khachsanmoinhat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </androidx.recyclerview.widget.RecyclerView>
+                        <TextView
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:text="Khách sạn đã đặt"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_margin="5dp"
+                            android:id="@+id/recyclerview_khachsandadat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
         <com.google.android.material.navigation.NavigationView
             android:layout_gravity="start"
             android:id="@+id/navigationview"

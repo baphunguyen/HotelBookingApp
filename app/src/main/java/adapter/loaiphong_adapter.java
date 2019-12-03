@@ -18,9 +18,13 @@ import androidx.core.content.ContextCompat;
 import com.squareup.picasso.Picasso;
 
 import java.text.DecimalFormat;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import activity.MainActivity;
+import course.examples.appdatphong.CalendarActivity;
 import course.examples.appdatphong.GioHangActivity;
 import course.examples.appdatphong.R;
 import model.giohang;
@@ -141,6 +145,10 @@ public class loaiphong_adapter extends BaseAdapter {
                         if (MainActivity.arr_giohang.get(i).getIdphong() == loaiphong.getIdphong()) {
                             MainActivity.arr_giohang.get(i).setSoluong(MainActivity.arr_giohang.get(i).getSoluong() + SoPhong);
                             MainActivity.arr_giohang.get(i).setSodem(MainActivity.arr_giohang.get(i).getSodem() + SoDem);
+                            SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+                            Date d_tra = formatter.parse(MainActivity.arr_giohang.get(i).getNgaytraphong(),new ParsePosition(0));
+                            Date d_nhan = formatter.parse(MainActivity.arr_giohang.get(i).getNgaynhanphong(),new ParsePosition(0));
+                            CalendarActivity.XoaNgay(d_nhan, d_tra);
                             if (MainActivity.arr_giohang.get(i).getSoluong() > 10) {
                                 MainActivity.arr_giohang.get(i).setSoluong(10);
                             }

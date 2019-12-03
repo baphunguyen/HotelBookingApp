@@ -1870,6 +1870,7 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id textview_diachikhachsan
+id textview_diadiem
 id textview_giaphong
 id textview_giuong
 id textview_loaisp
