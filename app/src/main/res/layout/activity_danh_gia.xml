@@ -17,13 +17,13 @@
         app:titleTextColor="#FFFFFF" />
 
     <LinearLayout
-
+        android:weightSum="10"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="53dp">
 
         <TextView
-
+            android:layout_weight="6"
             android:id="@+id/tongmark"
             android:layout_width="221dp"
             android:layout_height="70dp"
@@ -34,8 +34,7 @@
             android:id="@+id/buttonnhapdanhgia"
             android:layout_width="168dp"
             android:layout_height="70dp"
-
-
+            android:layout_weight="4"
             android:background="@drawable/custom_button"
             android:gravity="center"
             android:text="Thêm Đánh Giá"
