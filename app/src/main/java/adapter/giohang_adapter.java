@@ -249,9 +249,12 @@ public class giohang_adapter extends BaseAdapter {
                 MainActivity.arr_giohang.get(position).setSodem(sodemmoinhat);
                 int giamoinhat = (giahientai * sodemmoinhat) / sodemhientai;
                 MainActivity.arr_giohang.get(position).setGiaphong(giamoinhat);
-                Date d_tra = formatter.parse(MainActivity.arr_giohang.get(position).getNgaytraphong(),new ParsePosition(0));
-                Date d_nhan = formatter.parse(MainActivity.arr_giohang.get(position).getNgaynhanphong(),new ParsePosition(0));
-                CalendarActivity.XoaNgay(d_nhan, d_tra);
+                if (MainActivity.arr_giohang.get(position).getNgaynhanphong() != null && MainActivity.arr_giohang.get(position).getNgaytraphong() != null)
+                {
+                    Date d_tra = formatter.parse(MainActivity.arr_giohang.get(position).getNgaytraphong(),new ParsePosition(0));
+                    Date d_nhan = formatter.parse(MainActivity.arr_giohang.get(position).getNgaynhanphong(),new ParsePosition(0));
+                    CalendarActivity.XoaNgay(d_nhan, d_tra);
+                }
                 MainActivity.arr_giohang.get(position).setNgaynhanphong(null);
                 MainActivity.arr_giohang.get(position).setNgaytraphong(null);
                 viewHolder.bt_chonngay.setPadding(0,0,0,0);
@@ -292,9 +295,12 @@ public class giohang_adapter extends BaseAdapter {
                 MainActivity.arr_giohang.get(position).setSodem(sodemmoinhat);
                 int giamoinhat = (giahientai * sodemmoinhat) / sodemhientai;
                 MainActivity.arr_giohang.get(position).setGiaphong(giamoinhat);
-                Date d_tra = formatter.parse(MainActivity.arr_giohang.get(position).getNgaytraphong(),new ParsePosition(0));
-                Date d_nhan = formatter.parse(MainActivity.arr_giohang.get(position).getNgaynhanphong(),new ParsePosition(0));
-                CalendarActivity.XoaNgay(d_nhan, d_tra);
+                if (MainActivity.arr_giohang.get(position).getNgaynhanphong() != null && MainActivity.arr_giohang.get(position).getNgaytraphong() != null)
+                {
+                    Date d_tra = formatter.parse(MainActivity.arr_giohang.get(position).getNgaytraphong(),new ParsePosition(0));
+                    Date d_nhan = formatter.parse(MainActivity.arr_giohang.get(position).getNgaynhanphong(),new ParsePosition(0));
+                    CalendarActivity.XoaNgay(d_nhan, d_tra);
+                }
                 MainActivity.arr_giohang.get(position).setNgaynhanphong(null);
                 MainActivity.arr_giohang.get(position).setNgaytraphong(null);
                 viewHolder.bt_chonngay.setPadding(0,0,0,0);

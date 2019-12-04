@@ -556,5 +556,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     private void getIdTaiKhoan() {
         idtaikhoan = getIntent().getIntExtra("idtaikhoan", -1);
+        check_connection.ShowToast_Short(getApplicationContext(), idtaikhoan+"");
     }
 }

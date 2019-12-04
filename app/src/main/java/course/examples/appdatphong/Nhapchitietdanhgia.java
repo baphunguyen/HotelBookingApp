@@ -306,7 +306,8 @@ public class Nhapchitietdanhgia extends AppCompatActivity implements View.OnClic
             if(filePath !=null && ten.length() >0 && header.length()>0 && detail.length()>0 && mark.length()>0  ) {
 
                 uploadImage();
-                Intent intent = new Intent(Nhapchitietdanhgia.this, MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("idtaikhoan", MainActivity.idtaikhoan);
                 startActivity(intent);
             }
             else if(filePath ==null && ten.length() >0 &&header.length()>0 && detail.length()>0 && mark.length()>0   ) {

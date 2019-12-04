@@ -139,14 +139,14 @@
 
                         <LinearLayout
                             android:longClickable="true"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginTop="3dp"
                                 android:background="@drawable/boder"
                                 android:gravity="center"
                                 android:orientation="horizontal">
@@ -154,8 +154,8 @@
                                 <Button
                                     android:longClickable="true"
                                     android:id="@+id/btminus_dem"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
                                     android:background="@drawable/boder2"
                                     android:focusable="false"
                                     android:text="-"
@@ -166,19 +166,19 @@
                                 <Button
                                     android:longClickable="true"
                                     android:id="@+id/btvalues_dem"
-                                    android:layout_width="50dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="35dp"
                                     android:background="@null"
                                     android:focusable="false"
                                     android:text="1"
-                                    android:textSize="20sp">
+                                    android:textSize="18sp">
                                 </Button>
 
                                 <Button
                                     android:longClickable="true"
                                     android:id="@+id/btplus_dem"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
                                     android:background="@drawable/boder2"
                                     android:focusable="false"
                                     android:text="+"
@@ -199,8 +199,8 @@
                                 <Button
                                     android:longClickable="true"
                                     android:id="@+id/btminus_phong"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
                                     android:background="@drawable/boder2"
                                     android:focusable="false"
                                     android:text="-"
@@ -211,19 +211,19 @@
                                 <Button
                                     android:longClickable="true"
                                     android:id="@+id/btvalues_phong"
-                                    android:layout_width="50dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="35dp"
                                     android:background="@null"
                                     android:focusable="false"
                                     android:text="1"
-                                    android:textSize="20sp">
+                                    android:textSize="18sp">
                                 </Button>
 
                                 <Button
                                     android:longClickable="true"
                                     android:id="@+id/btplus_phong"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
                                     android:background="@drawable/boder2"
                                     android:focusable="false"
                                     android:text="+"
