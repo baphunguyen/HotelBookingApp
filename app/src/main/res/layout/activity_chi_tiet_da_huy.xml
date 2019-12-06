@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChiTietDaHuyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_chitietdahuy"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colortoolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Thông tin chi tiết "
+        app:titleTextColor="#FFFFFF"></androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/img_chitiethinhanh_dahuy"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"></ImageView>
+
+    <TextView
+        android:id="@+id/tv_tenchitietkhachsan_dahuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Tên khách sạn"
+        android:textColor="#0037FF"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tv_tenchitietphong_dahuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Tên phòng"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tv_giachitiet_dahuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="10dp"
+        android:text="giá"
+        android:textColor="#D60454"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv_soluongphong_dahuy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="số lượng phòng: "
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_sodem_dahuy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="số đêm: "
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_ngaynhanphong_dahuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Ngày nhận phòng: "
+                android:textColor="#000000"
+                android:textSize="24sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_ngaytraphong_dahuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Ngày trả phòng: "
+                android:textColor="#000000"
+                android:textSize="24sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_dichvu_dahuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Dịch vụ: "
+                android:textSize="24sp">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:gravity="center"
+        android:background="@drawable/boder"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:text="Đã hủy đặt hàng"
+        android:layout_width="300dp"
+        android:layout_height="70dp"/>
+
+</LinearLayout>

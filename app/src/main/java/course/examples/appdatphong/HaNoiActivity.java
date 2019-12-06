@@ -108,6 +108,7 @@ public class HaNoiActivity extends AppCompatActivity implements SearchView.OnQue
         }
         return super.onOptionsItemSelected(item);
     }
+
     private void Anhxa() {
         toolbarhanoi = (Toolbar) findViewById(R.id.toolbardhanoi);
         listviewhanoi = (ListView) findViewById(R.id.listviewhanoi);

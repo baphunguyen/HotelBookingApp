@@ -47,12 +47,12 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:inputType="text"
                 android:id="@+id/tv_ten_dang_nhap"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="2"
+                android:inputType="text"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -73,12 +73,12 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:inputType="text"
                 android:id="@+id/tv_mat_khau"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="2"
+                android:inputType="text"
                 android:password="true"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -100,12 +100,12 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:inputType="text"
                 android:id="@+id/tv_hoten"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="2"
+                android:inputType="text"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -126,13 +126,13 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:inputType="textEmailAddress"
                 android:id="@+id/tv_email"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:scrollbars = "vertical"
                 android:layout_gravity="center"
                 android:layout_weight="2"
+                android:inputType="textEmailAddress"
+                android:scrollbars="vertical"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -153,14 +153,25 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:inputType="phone"
                 android:id="@+id/tv_sdt"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="2"
+                android:inputType="phone"
                 android:textSize="18sp" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_history"
+            android:text="Lịch sử đặt phòng"
+            android:background="@drawable/boder2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -171,26 +182,26 @@
             <Button
                 android:id="@+id/btn_thay_doi"
                 android:layout_width="0dp"
-                android:textAllCaps="false"
-                android:textColor="#ffffff"
-                android:textSize="16sp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/boder2"
-                android:text="Thay đổi" />
+                android:text="Thay đổi"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/btn_dang_xuat"
                 android:layout_width="0dp"
-                android:textAllCaps="false"
-                android:textColor="#ffffff"
-                android:textSize="16sp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/boder2"
-                android:text="Đăng xuất" />
+                android:text="Đăng xuất"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
         </LinearLayout>
 
     </LinearLayout>

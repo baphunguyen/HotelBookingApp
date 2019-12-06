@@ -23,6 +23,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -54,16 +55,63 @@ public class GioHangActivity extends AppCompatActivity {
     public static final int REQUEST_CODE_EXAMPLE = 0x9345;
     SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 
+
+    int db_id = 0;
+    String db_hoten = "";
+    String db_sdt = "";
+    String db_email = "";
+
+    public String hoten = "";
+    public String sdt = "";
+    public String email = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_giohang);
         Anhxa();
+        GetDataTaiKhoan();
         ActionToolbar();
         CheckData();
         EvenUltil();
         CactchOnItemListView();
         EvenButton();
+    }
+
+    private void GetDataTaiKhoan() {
+        RequestQueue requestQueue2 = Volley.newRequestQueue(getApplicationContext());
+        JsonArrayRequest jsonArrayRequest2 = new JsonArrayRequest(server.duongdan_taikhoan,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        if (response != null) {
+                            for (int i = 0; i < response.length(); i++) {
+                                try {
+                                    JSONObject jsonObject = response.getJSONObject(i);
+                                    db_id = jsonObject.getInt("id");
+                                    db_hoten = jsonObject.getString("hoten");
+                                    db_email = jsonObject.getString("email");
+                                    db_sdt = jsonObject.getString("sodienthoai");
+                                    if (db_id == MainActivity.idtaikhoan) {
+                                        hoten = db_hoten;
+                                        sdt = db_sdt;
+                                        email = db_email;
+                                        break;
+                                    }
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        check_connection.ShowToast_Short(getApplicationContext(), error.toString());
+                    }
+                });
+        requestQueue2.add(jsonArrayRequest2);
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -186,6 +234,7 @@ public class GioHangActivity extends AppCompatActivity {
                                     jsonObject.put("ngaynhanphong", MainActivity.arr_giohang.get(i).getNgaynhanphong());
                                     jsonObject.put("ngaytraphong", MainActivity.arr_giohang.get(i).getNgaytraphong());
                                     jsonObject.put("dichvu", MainActivity.arr_giohang.get(i).getDichvu());
+                                    jsonObject.put("trangthai", 0);
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
@@ -208,9 +257,9 @@ public class GioHangActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 HashMap<String, String> hashMap = new HashMap<String, String>();
-                hashMap.put("tenkhachhang", TaiKhoanActivity.tvHoTen.getText().toString());
-                hashMap.put("sodienthoai", TaiKhoanActivity.tvSdt.getText().toString());
-                hashMap.put("email", TaiKhoanActivity.tvEmail.getText().toString());
+                hashMap.put("tenkhachhang", hoten);
+                hashMap.put("sodienthoai", sdt);
+                hashMap.put("email", email);
                 hashMap.put("idtaikhoan", Integer.toString(MainActivity.idtaikhoan));
                 return hashMap;
             }

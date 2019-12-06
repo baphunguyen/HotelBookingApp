@@ -44,7 +44,7 @@ public class TaiKhoanActivity extends AppCompatActivity {
     static TextView tvHoTen;
     static TextView tvSdt;
     public static TextView tvEmail;
-    Button btnDangXuat, btnThayDoi;
+    Button btnDangXuat, btnThayDoi, btnLichsu;
 
     static int id = 0;
     int db_id = 0;
@@ -129,6 +129,14 @@ public class TaiKhoanActivity extends AppCompatActivity {
 
     //Đăng xuất
     private void eventButton() {
+        btnLichsu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TaiKhoanActivity.this, LichSuDatPhongActivity.class);
+                intent.putExtra("idtaikhoan", id);
+                startActivity(intent);
+            }
+        });
 
         btnDangXuat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -380,6 +388,7 @@ public class TaiKhoanActivity extends AppCompatActivity {
         tvEmail.setMovementMethod(new ScrollingMovementMethod());
         btnDangXuat = (Button) findViewById(R.id.btn_dang_xuat);
         btnThayDoi = (Button) findViewById(R.id.btn_thay_doi);
+        btnLichsu= (Button) findViewById(R.id.btn_history);
     }
 
     @Override

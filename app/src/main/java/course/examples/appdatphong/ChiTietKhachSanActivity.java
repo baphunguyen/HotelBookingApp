@@ -42,13 +42,14 @@ import java.util.Map;
 import model.CustomScrollView;
 import model.sanpham;
 import ultil.check_connection;
+
 public class ChiTietKhachSanActivity extends AppCompatActivity implements OnMapReadyCallback {
-//public class ChiTietKhachSanActivity extends AppCompatActivity {
+    //public class ChiTietKhachSanActivity extends AppCompatActivity {
     Toolbar toolbarchitiet;
     ImageView imgchitiet;
     TextView txtten, txtmota;
     Button buttonchonphong;
-    TextView txtdiachikhachsan,txtdanhgia,txtmotaks;
+    TextView txtdiachikhachsan, txtdanhgia, txtmotaks;
     TextView txttoolbar;
 
     RelativeLayout diachilayout, relativelayout_main, ggmap;
@@ -78,14 +79,12 @@ public class ChiTietKhachSanActivity extends AppCompatActivity implements OnMapR
         diachilayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClickAdd)
-                {
+                if (isClickAdd) {
                     ggmap.setVisibility(View.GONE);
                     isClickAdd = false;
                     return;
                 }
-                if (!isClickAdd)
-                {
+                if (!isClickAdd) {
                     ggmap.setVisibility(View.VISIBLE);
                     isClickAdd = true;
                     return;
@@ -100,21 +99,18 @@ public class ChiTietKhachSanActivity extends AppCompatActivity implements OnMapR
             public void onClick(View v) {
                 sanpham khachsan = new sanpham(id, tenchitiet, 0, hinhanhchitiet, motachitiet, idsanpham, diachi);
                 Intent intent = new Intent(getApplicationContext(), PhongActivity.class);
-                intent.putExtra("khachsan",khachsan);
+                intent.putExtra("khachsan", khachsan);
                 startActivity(intent);
             }
         });
         txtmotaks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (txtmota.getVisibility() == View.GONE)
-                {
+                if (txtmota.getVisibility() == View.GONE) {
 
                     txtmota.setVisibility(View.VISIBLE);
 
-                }
-                else
-                {
+                } else {
 
                     txtmota.setVisibility(View.GONE);
                 }
@@ -123,8 +119,8 @@ public class ChiTietKhachSanActivity extends AppCompatActivity implements OnMapR
         txtdanhgia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),DanhGia.class);
-                intent.putExtra("id",id);
+                Intent intent = new Intent(getApplicationContext(), DanhGia.class);
+                intent.putExtra("id", id);
                 startActivity(intent);
             }
         });
@@ -175,7 +171,7 @@ public class ChiTietKhachSanActivity extends AppCompatActivity implements OnMapR
         txtdanhgia = findViewById(R.id.danhgia);
         txtmotaks = findViewById(R.id.motakhachsan);
 
-       SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapkhachsan);
         mapFragment.getMapAsync(this);
         ggmap = (RelativeLayout) findViewById(R.id.ggmap);
@@ -206,14 +202,14 @@ public class ChiTietKhachSanActivity extends AppCompatActivity implements OnMapR
         LatLng p1 = null;
 
         try {
-          //   May throw an IOException
+            //   May throw an IOException
             address = coder.getFromLocationName(strAddress, 5);
             if (address == null) {
                 return null;
             }
 
             Address location = address.get(0);
-         p1 = new LatLng(location.getLatitude(), location.getLongitude() );
+            p1 = new LatLng(location.getLatitude(), location.getLongitude());
 
         } catch (IOException ex) {
 
@@ -224,7 +220,7 @@ public class ChiTietKhachSanActivity extends AppCompatActivity implements OnMapR
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-       mMap = googleMap;
+        mMap = googleMap;
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             //TODO: Consider calling
             //    ActivityCompat#requestPermissions
@@ -236,9 +232,9 @@ public class ChiTietKhachSanActivity extends AppCompatActivity implements OnMapR
             return;
         }
         mMap.setMyLocationEnabled(true);
-        LatLng location_hotel = getLocationFromAddress(getApplicationContext(),txtten.getText().toString());
+        LatLng location_hotel = getLocationFromAddress(getApplicationContext(), txtten.getText().toString());
         mMap.addMarker(new MarkerOptions().position(location_hotel).title(txtten.getText().toString()).snippet(txtdiachikhachsan.getText().toString()).icon(BitmapDescriptorFactory.defaultMarker()));
-       mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         CameraPosition cameraPosition = new CameraPosition.Builder().target(location_hotel).zoom(18).build();
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
     }

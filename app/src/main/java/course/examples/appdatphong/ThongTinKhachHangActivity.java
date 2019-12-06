@@ -120,6 +120,7 @@ public class ThongTinKhachHangActivity extends AppCompatActivity {
                                                 jsonObject.put("ngaynhanphong",MainActivity.arr_giohang.get(i).getNgaynhanphong());
                                                 jsonObject.put("ngaytraphong",MainActivity.arr_giohang.get(i).getNgaytraphong());
                                                 jsonObject.put("dichvu", MainActivity.arr_giohang.get(i).getDichvu());
+                                                jsonObject.put("trangthai", "0");
                                             } catch (JSONException e) {
                                                 e.printStackTrace();
                                             }
