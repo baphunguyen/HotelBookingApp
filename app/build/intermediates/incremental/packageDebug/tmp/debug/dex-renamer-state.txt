@@ -1,13 +1,7 @@
-#Sun Dec 08 01:45:33 ICT 2019
-path.3=classes.dex
-path.2=classes.dex
+#Sun Dec 08 02:15:19 ICT 2019
+base.0=D\:\\Dai_Hoc\\Hoc_Ky_5\\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\\Do_an\\HotelBooking\\HotelBookingApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
-path.0=classes.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
 renamed.1=classes2.dex
+path.0=classes.dex
 renamed.0=classes.dex
-base.3=D\:\\Dai_Hoc\\Hoc_Ky_5\\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\\Do_an\\HotelBooking\\HotelBookingApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
-base.2=D\:\\Dai_Hoc\\Hoc_Ky_5\\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\\Do_an\\HotelBooking\\HotelBookingApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
-base.1=E\:\\TestApp\\HotelBookingApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
-base.0=E\:\\TestApp\\HotelBookingApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+base.1=D\:\\Dai_Hoc\\Hoc_Ky_5\\NT118.K13-VN_Phat_trien_ung_dung_tren_thiet_bi_di_dong\\Do_an\\HotelBooking\\HotelBookingApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

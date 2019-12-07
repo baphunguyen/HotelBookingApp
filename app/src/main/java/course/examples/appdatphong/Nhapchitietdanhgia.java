@@ -151,14 +151,14 @@ public class Nhapchitietdanhgia extends AppCompatActivity implements View.OnClic
         final String header = edtheaderdg.getText().toString().trim();
         final String detail = edtdetaildg.getText().toString().trim();
         final String mark = edtmark.getText().toString().trim();
-
+        int mark_int = Integer.valueOf(mark);
 
         //final String email = etEmail.getText().toString().trim();
         //   if (tendangnhap.length() > 0 && header.length() > 0 && detail.length() > 0 &&
         //         mark.length()>0) {
         //Kiểm tra nhập đầy đủ thông tin
         if (tendangnhap.length() > 0 && header.length() > 0 && detail.length() > 0 &&
-                mark.length()>0) {
+                mark.length()>0 && mark_int >= 1 && mark_int <= 10) {
 // mark>0 && mark<11
             RequestQueue requestQueue2 = Volley.newRequestQueue(getApplicationContext());
             StringRequest stringRequest = new StringRequest(Request.Method.POST, urlGetData,
@@ -215,7 +215,7 @@ public class Nhapchitietdanhgia extends AppCompatActivity implements View.OnClic
                 }
             };
             requestQueue2.add(stringRequest);
-            check_connection.ShowToast_Short(getApplicationContext(), "Thêm Đánh Gía thành công");
+            check_connection.ShowToast_Short(getApplicationContext(), "Thêm Đánh Giá thành công");
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             intent.putExtra("idtaikhoan", MainActivity.idtaikhoan);
             startActivity(intent);
@@ -300,17 +300,20 @@ public class Nhapchitietdanhgia extends AppCompatActivity implements View.OnClic
             String header = get2();
             String detail = get3();
             String mark = get4();
+            int mark_int = Integer.valueOf(mark);
             //&& mark1>0 && mark1<11
             //   int mark1 = Integer.parseInt(edtmark.getText().toString());
             // String detail1 = get5();
-            if(filePath !=null && ten.length() >0 && header.length()>0 && detail.length()>0 && mark.length()>0  ) {
+            if(filePath !=null && ten.length() >0 && header.length()>0 && detail.length()>0
+                    && mark.length()>0  && mark_int >= 1 && mark_int <= 10) {
 
                 uploadImage();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.putExtra("idtaikhoan", MainActivity.idtaikhoan);
                 startActivity(intent);
             }
-            else if(filePath ==null && ten.length() >0 &&header.length()>0 && detail.length()>0 && mark.length()>0   ) {
+            else if(filePath ==null && ten.length() >0 &&header.length()>0 && detail.length()>0
+                    && mark.length()>0  && mark_int >= 1 && mark_int <= 10) {
                 EventClickButton();
             }
             // else if(ten.length() <0 || header.length()<0 || detail.length()<0 ||  mark.length()>0) {
@@ -320,7 +323,7 @@ public class Nhapchitietdanhgia extends AppCompatActivity implements View.OnClic
             //        mark.length()>0) {
 
             else {
-                Toast.makeText(Nhapchitietdanhgia.this,"Hãy điền đầy đủ thông tin cần thiết!",Toast.LENGTH_LONG).show();
+                Toast.makeText(Nhapchitietdanhgia.this,"Hãy kiểm tra lại các thông tin",Toast.LENGTH_LONG).show();
             }
         }
         //   if(v == buttonintent){
