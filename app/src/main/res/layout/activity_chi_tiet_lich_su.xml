@@ -34,7 +34,7 @@
         android:layout_marginTop="16dp"
         android:text="Tên khách sạn"
         android:textColor="#0037FF"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="bold"></TextView>
 
     <TextView
@@ -56,12 +56,12 @@
         android:layout_marginTop="10dp"
         android:text="giá"
         android:textColor="#D60454"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
     <ScrollView
         android:id="@+id/ScrollView"
         android:layout_width="fill_parent"
-        android:layout_height="200dp"
+        android:layout_height="190dp"
         android:fillViewport="true">
         <LinearLayout
             android:orientation="vertical"
@@ -83,7 +83,7 @@
                     android:layout_weight="3"
                     android:text="số lượng phòng: "
                     android:textColor="#000000"
-                    android:textSize="24sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tv_sodem_lichsu"
@@ -92,7 +92,7 @@
                     android:layout_weight="2"
                     android:text="số đêm: "
                     android:textColor="#000000"
-                    android:textSize="24sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <TextView
@@ -103,7 +103,7 @@
                 android:layout_marginTop="10dp"
                 android:text="Ngày nhận phòng: "
                 android:textColor="#000000"
-                android:textSize="24sp">
+                android:textSize="20sp">
             </TextView>
 
             <TextView
@@ -114,7 +114,7 @@
                 android:layout_marginTop="10dp"
                 android:text="Ngày trả phòng: "
                 android:textColor="#000000"
-                android:textSize="24sp">
+                android:textSize="20sp">
             </TextView>
 
             <TextView
@@ -124,7 +124,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="10dp"
                 android:text="Dịch vụ: "
-                android:textSize="24sp">
+                android:textSize="20sp">
             </TextView>
         </LinearLayout>
     </ScrollView>
