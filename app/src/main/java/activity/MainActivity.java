@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     String hinhanhloaisp = "";
     ArrayList<sanpham> arr_sanpham;
     sanpham_adapter sanpham_adapter;
-    ArrayList<sanpham> arr_khachsandadat;
+    public static ArrayList<sanpham> arr_khachsandadat;
     khachsandadat_adapter khachsandadat_adapter;
 
     loaispadapter diadiemadapter;
@@ -556,6 +556,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     private void getIdTaiKhoan() {
         idtaikhoan = getIntent().getIntExtra("idtaikhoan", -1);
-        check_connection.ShowToast_Short(getApplicationContext(), idtaikhoan+"");
+
     }
 }

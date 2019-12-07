@@ -15,9 +15,10 @@
         app:title="Đánh giá"
         app:titleTextColor="#FFFFFF" />
     <TextView
+        android:textColor="#000000"
         android:textStyle="bold"
         android:layout_margin="10dp"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:text="Nhập đánh giá của bạn:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -27,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="Tên của bạn*"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
     <EditText
 
@@ -36,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="Tiêu đề*"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
     <EditText
 
@@ -45,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="Đánh giá của bạn*"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
     <EditText
         android:id="@+id/markdg"
         android:layout_width="match_parent"
@@ -53,7 +54,7 @@
         android:layout_margin="10dp"
         android:hint="Điểm cho khách sạn (thang điểm từ 1 đến 10)*"
         android:inputType="number"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,8 +68,8 @@
 
         <Button
             android:id="@+id/btnChoose"
-            android:layout_width="186dp"
-            android:layout_height="match_parent"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:background="@drawable/boder2"
             android:text="Thêm ảnh"
@@ -79,10 +80,10 @@
 
 
         <Button
-
+            android:layout_marginLeft="20dp"
             android:id="@+id/btnUpload"
-            android:layout_width="186dp"
-            android:layout_height="match_parent"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:background="@drawable/boder2"
             android:text="Xác nhận"

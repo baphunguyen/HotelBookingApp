@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DanhGia">
 
     <androidx.appcompat.widget.Toolbar
@@ -17,48 +17,48 @@
         app:titleTextColor="#FFFFFF" />
 
     <LinearLayout
-        android:weightSum="10"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="53dp">
+        android:layout_height="70dp"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_weight="6"
             android:id="@+id/tongmark"
-            android:layout_width="221dp"
-            android:layout_height="70dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="2"
             android:textColor="#E91E63"
-            android:textSize="45sp"></TextView>
+            android:textSize="25sp"></TextView>
 
         <Button
             android:id="@+id/buttonnhapdanhgia"
-            android:layout_width="168dp"
-            android:layout_height="70dp"
-            android:layout_weight="4"
-            android:gravity="center"
-            android:text="Thêm Đánh Giá"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
             android:background="@drawable/background_bt_chonphong"
+            android:text="Thêm đánh giá"
+            android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"></Button>
-
+            android:textSize="18sp"></Button>
     </LinearLayout>
+
     <ProgressBar
-        style="@style/progressBarStyle"
         android:id="@+id/progressbar2"
+        style="@style/progressBarStyle"
         android:layout_width="match_parent"
         android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
         android:max="10"
         android:progress="0"></ProgressBar>
 
     <ListView
         android:id="@+id/lvdg"
-        android:layout_width="413dp"
-        android:layout_height="611dp"
-        android:longClickable="true">
-
-
-    </ListView>
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:longClickable="true"></ListView>
 </LinearLayout>
 
 

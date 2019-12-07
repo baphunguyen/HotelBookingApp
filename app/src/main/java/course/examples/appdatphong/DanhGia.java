@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -29,6 +30,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import activity.MainActivity;
 import adapter.danhgiaadapter2;
 import model.danhgia;
 import ultil.check_connection;
@@ -152,12 +154,23 @@ public class DanhGia extends AppCompatActivity {
         btnthemdanhgia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Nhapchitietdanhgia.class);
-                intent.putExtra("id1", id);
-                startActivity(intent);
+                boolean isExist = false;
+                for (int i = 0; i < MainActivity.arr_khachsandadat.size(); i++)
+                {
+                    if (MainActivity.arr_khachsandadat.get(i).getId() == id)
+                    {
+                        isExist = true;
+                        Intent intent = new Intent(getApplicationContext(), Nhapchitietdanhgia.class);
+                        intent.putExtra("id1", id);
+                        startActivity(intent);
+                        break;
+                    }
+                }
+                if (isExist == false) Toast.makeText(getApplicationContext(), "Bạn chưa thể đánh giá vì chưa đặt khách sạn này", Toast.LENGTH_LONG).show();
             }
         });
     }
+
     private void GetIDdiem() {
         //-1 de bik bao loi o dau
         id = getIntent().getIntExtra("id",-1);
