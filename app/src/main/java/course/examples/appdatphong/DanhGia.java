@@ -150,7 +150,6 @@ public class DanhGia extends AppCompatActivity {
 
     }
     private void EventButton() {
-
         btnthemdanhgia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -200,6 +199,4 @@ public class DanhGia extends AppCompatActivity {
         lvdg.setAdapter(danhgiaadapter2);
 
     }
-
 }
-
