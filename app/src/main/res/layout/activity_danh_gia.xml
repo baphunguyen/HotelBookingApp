@@ -35,10 +35,9 @@
             android:layout_width="168dp"
             android:layout_height="70dp"
             android:layout_weight="4"
-            android:background="@drawable/custom_button"
             android:gravity="center"
             android:text="Thêm Đánh Giá"
-
+            android:background="@drawable/background_bt_chonphong"
             android:textColor="#FFFFFF"
             android:textSize="20sp"></Button>
 
@@ -46,7 +45,6 @@
     <ProgressBar
         style="@style/progressBarStyle"
         android:id="@+id/progressbar2"
-
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:max="10"
